@@ -1,0 +1,74 @@
+.information{
+    /* background-color: rebeccapurple; */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) , var(--bg);
+    background-size: cover;
+
+    width: 100%;
+    height: 100%;
+    
+    box-sizing: border-box;
+    padding: 10px 0;
+
+    visibility: hidden;
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.information.active{
+    visibility: visible;
+}
+
+/* Nombres y banda */
+.information_box-content{
+    width: 97%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: var(--gray);
+    transition: all .2s;
+
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    
+    padding: 0 10px;
+    box-sizing: border-box;
+    gap: 10px;
+}
+
+.information_box-content:hover{
+    background-color: var(--hover);
+}
+
+.information_box-content .icon{
+    /* background-color: var(--black); */
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.information .text p{
+    padding: 0;
+    margin: 0;
+}
+
+.information .text p:nth-child(1){
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.information .text p:nth-child(2){
+    font-weight: 100;
+    font-size: 12px;
+}
+
+/* banner de la foto */
+.cover{
+    background-size: cover;
+
+    width: 100%;
+    height: 80%;
+    border-radius: 5px;
+}
